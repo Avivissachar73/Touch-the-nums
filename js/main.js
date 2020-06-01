@@ -4,7 +4,7 @@ var gBoardSize = 5;
 var gNextNum = 1;
 
 var gTime = 0;
-var timerInterval;
+var gTimerInterval;
 var gTimerStr = '';
 
 console.log('hello git!!!');
@@ -15,8 +15,8 @@ function resetGame(boardSize) {
 }
 
 function init() {
-    if (timerInterval) clearInterval(timerInterval);
-    timerInterval = null;
+    if (gTimerInterval) clearInterval(gTimerInterval);
+    gTimerInterval = null;
     gNextNum = 1;
     gTime = 0;
     createBoard();
@@ -37,12 +37,12 @@ function cellClicked(elCell) {
         elCell.innerText = '';
         elCell.classList.add('clicked');
         console.log('thats right!');
-        if (gNextNum === 1) timerInterval = setInterval(timer,10);
+        if (gNextNum === 1) gTimerInterval = setInterval(timer,10);
         else if (gNextNum === gBoardSize*gBoardSize) {
             var msg = `You finished the game!\nYou did it in only ${gTimerStr} seconds!`;
             console.log(msg);
             alert(msg);
-            clearInterval(timerInterval);
+            clearInterval(gTimerInterval);
         }
         gNextNum++;
     } else console.log('Wrong number!');
