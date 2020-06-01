@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>touch-nums!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="init()">
+
+    <hr/>
+    <div class="header">
+        <h1>Touch Nums</h1>
+    </div>
+    <br/>
+    <div class="difficulty">
+        <div class="buttons">
+            <button onclick="resetGame(3)" class="button" >Easy</button>
+            <button onclick="resetGame(5)" class="button" >Medium</button>
+            <button onclick="resetGame(7)" class="button" >Hard</button>
+        </div>
+    </div>
+    <br/>
+    <div class="game-board"></div>
+    <br/>
+    <div class="timer-container">
+        <div class="timer">0.00</div>
+    </div>
+    <hr/>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

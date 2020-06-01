@@ -1,0 +1,81 @@
+
+body {
+    background-color: rgb(176, 247, 148);
+}
+
+.header {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* .header h1 {
+    background-color: aquamarine;
+    
+} */
+
+.game-bord {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+.cell {
+    background-color: burlywood;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 200%;
+}
+
+.cell:hover {
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+.cell.clicked {
+    background-color: lightgray;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 200%;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.header h1 , .timer {
+    display: inline-block;
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 200%;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.difficulty {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    display: inline-block;
+}
+
+.buttons .button {
+    float: right;
+    text-align: center;
+    background-color: lightsalmon;
+    font-size: 100%;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    width: 100px;
+}
